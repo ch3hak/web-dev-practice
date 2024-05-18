@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Net Ninja - CSS Flexbox</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href="" class="fb">Facebook</a></li>
+                    <li><a href="" class="tw">Twitter</a></li>
+                </ul>
+            </nav>
+
+            <div style="margin: 20px;">
+                <span>Layout: </span>
+                <a href="#" class="stack">Stack</a>
+                <a href="#" class="grid">Grid</a>
+            </div>
+
+
+            <section id="blocks">
+                <article>
+                    <h2>I pity the fool...</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sequi consequatur assumenda, ut veniam rerum incidunt laborum dolor sapiente. Aperiam fuga odit commodi a, voluptate fugiat exercitationem sapiente ex aspernatur?</p>
+                </article>
+                <article>
+                    <h2>Get to the chopper...</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis animi, alias dolores ipsam tenetur praesentium, possimus eum numquam corporis atque corrupti consequatur voluptates distinctio veniam aperiam eius deleniti deserunt dolorum?</p>
+                </article>
+                <article>
+                    <h2>What's a horse doing on a spaceship...?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloribus nostrum voluptas voluptate neque porro, dolores id ipsa possimus placeat animi cumque recusandae maxime natus beatae quaerat, incidunt commodi nemo!</p>
+                </article>
+                <article>
+                    <h2>I pity the fool...</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi facilis blanditiis placeat! Iusto cum fugit quos eaque. Tempora beatae, voluptas et recusandae inventore odit officia facilis voluptatum minus numquam temporibus?</p>
+                </article>
+                <article>
+                    <h2>Get to the chopper...</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis animi, alias dolores ipsam tenetur praesentium, possimus eum numquam corporis atque corrupti consequatur voluptates distinctio veniam aperiam eius deleniti deserunt dolorum?</p>
+                </article>
+                <article>
+                    <h2>What's a horse doing on a spaceship...?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloribus nostrum voluptas voluptate neque porro, dolores id ipsa possimus placeat animi cumque recusandae maxime natus beatae quaerat, incidunt commodi nemo!</p>
+                </article>
+
+            </section>
+        </div>
+        <script>
+            $("a.stack").on("click", function(){
+                $("article").addClass("stack");
+            });
+            $("a.grid").on("click", function(){
+                $("article").removeClass("stack");
+            });
+        </script>
+    </body>
+</html>
